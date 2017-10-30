@@ -1,0 +1,15 @@
+# Gene Regulatory Network Models
+
+To simulate using KaSim v3.5 (not the master branch):
+
+`path_to_kasim -i model.ka -t 1000 -p 1000 -o model.out.txt -batch`
+
+To simulate using PISKaS v1.3, the model should be modified with the following statements in the top of the file:
+
+`%compartment: cell 1`
+
+`%use: cell`
+
+then
+
+`mpirun -np 1 path_to_piskas -i model.cka -t 1000 -p 1000 -o model.`
