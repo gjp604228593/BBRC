@@ -1,0 +1,193 @@
+%agent: dna_i(dna,prot,rna,type~p1~ss5end~l1~l2~l3~t1,up,dw)
+%agent: dna_primer(dna,prot,rna,type~p1~l1~l2~a~ab~bg~pl5~l5~l6~l7~l8~ori~ss3end~t1,up,dw)
+%agent: rna_i(dna,prot,rna,type~ss5end~l1~l2~l3,up,dw)
+%agent: rna_primer(dna,prot,rna,type~l1~l2~a~ab~bg~pl5~l5~l6~l7~l8~ori~ss3end,up,dw)
+%agent: cplx_pol3(dna,rna)
+%agent: cplx_rnap(dna,prot,rna)
+%agent: prot_rnha(dna,rna)
+
+%var: 't0_dna_i_p1' 1.000000e+00
+%var: 't0_dna_i_ss5end' 1.000000e+00
+%var: 't0_dna_i_l1' 1.000000e+00
+%var: 't0_dna_i_l2' 1.000000e+00
+%var: 't0_dna_i_l3' 1.000000e+00
+%var: 't0_dna_i_t1' 1.000000e+00
+%var: 't0_dna_primer_p1' 1.000000e+00
+%var: 't0_dna_primer_l1' 1.000000e+00
+%var: 't0_dna_primer_l2' 1.000000e+00
+%var: 't0_dna_primer_alpha' 1.000000e+00
+%var: 't0_dna_primer_alpha_beta' 1.000000e+00
+%var: 't0_dna_primer_beta_gamma' 1.000000e+00
+%var: 't0_dna_primer_prel5' 1.000000e+00
+%var: 't0_dna_primer_l5' 1.000000e+00
+%var: 't0_dna_primer_l6' 1.000000e+00
+%var: 't0_dna_primer_l7' 1.000000e+00
+%var: 't0_dna_primer_l8' 1.000000e+00
+%var: 't0_dna_primer_O' 1.000000e+00
+%var: 't0_dna_primer_ss3end' 1.000000e+00
+%var: 't0_dna_primer_t1' 1.000000e+00
+%var: 't0_rna_i_ss5end' 0.000000e+00
+%var: 't0_rna_i_l1' 0.000000e+00
+%var: 't0_rna_i_l2' 0.000000e+00
+%var: 't0_rna_i_l3' 0.000000e+00
+%var: 't0_rna_primer_l1' 0.000000e+00
+%var: 't0_rna_primer_l2' 0.000000e+00
+%var: 't0_rna_primer_a' 0.000000e+00
+%var: 't0_rna_primer_ab' 0.000000e+00
+%var: 't0_rna_primer_bg' 0.000000e+00
+%var: 't0_rna_primer_pl5' 0.000000e+00
+%var: 't0_rna_primer_l5' 0.000000e+00
+%var: 't0_rna_primer_l6' 0.000000e+00
+%var: 't0_rna_primer_l7' 0.000000e+00
+%var: 't0_rna_primer_l8' 0.000000e+00
+%var: 't0_rna_primer_ori' 0.000000e+00
+%var: 't0_rna_primer_ss3end' 0.000000e+00
+%var: 't0_cplx_pol3' 1.000000e+00
+%var: 't0_cplx_rnap' 2.000000e+00
+%var: 't0_prot_rnha' 1.000000e+00
+%var: 'fwd_docking_rnap_dna_i_p1' 1.000000e+00
+%var: 'rvs_docking_rnap_dna_i_p1' 1.000000e+00
+%var: 'fwd_sliding_rnap_dna_i_ss5end' 1.000000e+00
+%var: 'fwd_sliding_rnap_dna_i_l1' 1.000000e+00
+%var: 'fwd_sliding_rnap_dna_i_l2' 1.000000e+00
+%var: 'fwd_sliding_rnap_dna_i_l3' 1.000000e+00
+%var: 'fwd_sliding_rnap_dna_i_t1' 1.000000e+00
+%var: 'fwd_falloff_rnap_dna_i_t1' 1.000000e+00
+%var: 'fwd_docking_rnap_dna_primer_p1' 1.000000e+00
+%var: 'rvs_docking_rnap_dna_primer_p1' 1.000000e+00
+%var: 'fwd_sliding_rnap_dna_primer_l1' 1.000000e+00
+%var: 'fwd_sliding_rnap_dna_primer_l2' 1.000000e+00
+%var: 'fwd_sliding_rnap_dna_primer_alpha' 1.000000e+00
+%var: 'fwd_sliding_rnap_dna_primer_alpha_beta' 1.000000e+00
+%var: 'fwd_sliding_rnap_dna_primer_beta_gamma' 1.000000e+00
+%var: 'fwd_sliding_rnap_dna_primer_prel5' 1.000000e+00
+%var: 'fwd_sliding_rnap_dna_primer_l5' 1.000000e+00
+%var: 'fwd_sliding_rnap_dna_primer_l6' 1.000000e+00
+%var: 'fwd_sliding_rnap_dna_primer_l7' 1.000000e+00
+%var: 'fwd_sliding_rnap_dna_primer_l8' 1.000000e+00
+%var: 'fwd_sliding_rnap_dna_primer_ori' 1.000000e+00
+%var: 'fwd_sliding_rnap_dna_primer_ss3end' 1.000000e+00
+%var: 'fwd_sliding_rnap_dna_primer_t1' 1.000000e+00
+%var: 'fwd_falloff_rnap_dna_primer_t1' 1.000000e+00
+%var: 'fwd_falloff_rnap_dna_primer_l8' 1.000000e+00
+%var: 'fwd_rna_rna_duplex' 1.000000e+00
+%var: 'fwd_docking_rnha_rna_primer_ori' 1.000000e+00
+%var: 'rvs_docking_rnha_rna_primer_ori' 1.000000e+00
+%var: 'fwd_rna_primer_cleavage' 1.000000e+00
+%var: 'fwd_deg_rna_primer_ss3end' 1.000000e+00
+%var: 'fwd_docking_pol3_dna_primer_ori' 1.000000e+00
+%var: 'rvs_docking_pol3_dna_primer_ori' 1.000000e+00
+%var: 'fwd_dna_replication' 1.000000e+00
+
+'docking_rnap_dna_i_p1' cplx_rnap(dna),dna_i(prot,type~p1) -> cplx_rnap(dna!1),dna_i(prot!1,type~p1) @ 'fwd_docking_rnap_dna_i_p1'
+'docking_rnap_dna_i_p1_rev' cplx_rnap(dna!1),dna_i(prot!1,type~p1) -> cplx_rnap(dna),dna_i(prot,type~p1) @ 'rvs_docking_rnap_dna_i_p1'
+'sliding_rnap_dna_i_ss5end' cplx_rnap(dna!1,rna),dna_i(prot!1,type~p1),dna_i(prot,type~ss5end) -> cplx_rnap(dna!1,rna!3),dna_i(prot,type~p1),dna_i(prot!1,type~ss5end),rna_i(prot!3,type~ss5end) @ 'fwd_sliding_rnap_dna_i_ss5end'
+'sliding_rnap_dna_i_l1' cplx_rnap(dna!1,rna!3),dna_i(prot!1,type~ss5end),dna_i(prot,type~l1),rna_i(prot!3,type~ss5end,dw) -> cplx_rnap(dna!1,rna!3),dna_i(prot,type~ss5end),dna_i(prot!1,type~l1),rna_i(prot,type~ss5end,dw!4),rna_i(prot!3,type~l1,up!4) @ 'fwd_sliding_rnap_dna_i_l1'
+'sliding_rnap_dna_i_l2' cplx_rnap(dna!1,rna!3),dna_i(prot!1,type~l1),dna_i(prot,type~l2),rna_i(prot!3,type~l1,dw) -> cplx_rnap(dna!1,rna!3),dna_i(prot,type~l1),dna_i(prot!1,type~l2),rna_i(prot,type~l1,dw!4),rna_i(prot!3,type~l2,up!4) @ 'fwd_sliding_rnap_dna_i_l2'
+'sliding_rnap_dna_i_l3' cplx_rnap(dna!1,rna!3),dna_i(prot!1,type~l2),dna_i(prot,type~l3),rna_i(prot!3,type~l2,dw) -> cplx_rnap(dna!1,rna!3),dna_i(prot,type~l2),dna_i(prot!1,type~l3),rna_i(prot,type~l2,dw!4),rna_i(prot!3,type~l3,up!4) @ 'fwd_sliding_rnap_dna_i_l3'
+'sliding_rnap_dna_i_t1' cplx_rnap(dna!1,rna!3),dna_i(prot!1,type~l3),dna_i(prot,type~t1),rna_i(prot!3,type~l3) -> cplx_rnap(dna!1,rna!3),dna_i(prot,type~l3),dna_i(prot!1,type~t1),rna_i(prot!3,type~l3) @ 'fwd_sliding_rnap_dna_i_t1'
+'falloff_rnap_dna_i_t1' cplx_rnap(dna!1,rna!3),dna_i(prot!1,type~t1),rna_i(prot!3,type~l3) -> cplx_rnap(dna,rna),dna_i(prot,type~t1),rna_i(prot,type~l3) @ 'fwd_falloff_rnap_dna_i_t1'
+'docking_rnap_dna_primer_p1' cplx_rnap(dna),dna_primer(prot,type~p1) -> cplx_rnap(dna!1),dna_primer(prot!1,type~p1) @ 'fwd_docking_rnap_dna_primer_p1'
+'docking_rnap_dna_primer_p1_rev' cplx_rnap(dna!1),dna_primer(prot!1,type~p1) -> cplx_rnap(dna),dna_primer(prot,type~p1) @ 'rvs_docking_rnap_dna_primer_p1'
+'sliding_rnap_dna_primer_l1' cplx_rnap(dna!1,rna),dna_primer(prot!1,type~p1),dna_primer(prot,type~l1) -> cplx_rnap(dna!1,rna!3),dna_primer(prot,type~p1),dna_primer(prot!1,type~l1),rna_primer(prot!3,type~l1) @ 'fwd_sliding_rnap_dna_primer_l1'
+'sliding_rnap_dna_primer_l2' cplx_rnap(dna!1,rna!3),dna_primer(prot!1,type~l1),dna_primer(prot,type~l2),rna_primer(prot!3,type~l1,dw) -> cplx_rnap(dna!1,rna!3),dna_primer(prot,type~l1),dna_primer(prot!1,type~l2),rna_primer(prot,type~l1,dw!4),rna_primer(prot!3,type~l2,up!4) @ 'fwd_sliding_rnap_dna_primer_l2'
+'sliding_rnap_dna_primer_alpha' cplx_rnap(dna!1,rna!3),dna_primer(prot!1,type~l2),dna_primer(prot,type~a),rna_primer(prot!3,type~l2,dw) -> cplx_rnap(dna!1,rna!3),dna_primer(prot,type~l2),dna_primer(prot!1,type~a),rna_primer(prot,type~l2,dw!4),rna_primer(prot!3,type~a,up!4) @ 'fwd_sliding_rnap_dna_primer_alpha'
+'sliding_rnap_dna_primer_alpha_beta' cplx_rnap(dna!1,rna!3),dna_primer(prot!1,type~a),dna_primer(prot,type~ab),rna_primer(prot!3,type~a,dw) -> cplx_rnap(dna!1,rna!3),dna_primer(prot,type~a),dna_primer(prot!1,type~ab),rna_primer(prot,type~a,dw!4),rna_primer(prot!3,type~ab,up!4) @ 'fwd_sliding_rnap_dna_primer_alpha_beta'
+'sliding_rnap_dna_primer_beta_gamma' cplx_rnap(dna!1,rna!3),dna_primer(prot!1,type~ab),dna_primer(prot,type~bg),rna_primer(prot!3,type~ab,dw) -> cplx_rnap(dna!1,rna!3),dna_primer(prot,type~ab),dna_primer(prot!1,type~bg),rna_primer(prot,type~ab,dw!4),rna_primer(prot!3,type~bg,up!4) @ 'fwd_sliding_rnap_dna_primer_beta_gamma'
+'sliding_rnap_dna_primer_prel5' cplx_rnap(dna!1,rna!3),dna_primer(prot!1,type~bg),dna_primer(prot,type~pl5),rna_primer(prot!3,type~bg,dw) -> cplx_rnap(dna!1,rna!3),dna_primer(prot,type~bg),dna_primer(prot!1,type~pl5),rna_primer(prot,type~bg,dw!4),rna_primer(prot!3,type~pl5,up!4) @ 'fwd_sliding_rnap_dna_primer_prel5'
+'sliding_rnap_dna_primer_l5' cplx_rnap(dna!1,rna!3),dna_primer(prot!1,type~pl5),dna_primer(prot,type~l5),rna_primer(prot!3,type~pl5,dw) -> cplx_rnap(dna!1,rna!3),dna_primer(prot,type~pl5),dna_primer(prot!1,type~l5),rna_primer(prot,type~pl5,dw!4),rna_primer(prot!3,type~l5,up!4) @ 'fwd_sliding_rnap_dna_primer_l5'
+'sliding_rnap_dna_primer_l6' cplx_rnap(dna!1,rna!3),dna_primer(prot!1,type~l5),dna_primer(prot,type~l6),rna_primer(prot!3,type~l5,dw) -> cplx_rnap(dna!1,rna!3),dna_primer(prot,type~l5),dna_primer(prot!1,type~l6),rna_primer(prot,type~l5,dw!4),rna_primer(prot!3,type~l6,up!4) @ 'fwd_sliding_rnap_dna_primer_l6'
+'sliding_rnap_dna_primer_l7' cplx_rnap(dna!1,rna!3),dna_primer(prot!1,type~l6),dna_primer(prot,type~l7),rna_primer(prot!3,type~l6,dw) -> cplx_rnap(dna!1,rna!3),dna_primer(prot,type~l6),dna_primer(prot!1,type~l7),rna_primer(prot,type~l6,dw!4),rna_primer(prot!3,type~l7,up!4) @ 'fwd_sliding_rnap_dna_primer_l7'
+'sliding_rnap_dna_primer_l8' cplx_rnap(dna!1,rna!3),dna_primer(prot!1,type~l7),dna_primer(prot,type~l8),rna_primer(prot!3,type~l7,dw) -> cplx_rnap(dna!1,rna!3),dna_primer(prot,type~l7),dna_primer(prot!1,type~l8),rna_primer(prot,type~l7,dw!4),rna_primer(prot!3,type~l8,up!4) @ 'fwd_sliding_rnap_dna_primer_l8'
+'sliding_rnap_dna_primer_ori' cplx_rnap(dna!1,rna!3),dna_primer(prot!1,type~l8),dna_primer(prot,rna,type~ori),rna_primer(prot!3,type~l8,dw) -> cplx_rnap(dna!1,rna!3),dna_primer(prot,type~l8),dna_primer(prot!1,rna!5,type~ori),rna_primer(prot,type~l8,dw!4),rna_primer(dna!5,prot!3,type~ori,up!4) @ 'fwd_sliding_rnap_dna_primer_ori'
+'sliding_rnap_dna_primer_ss3end' cplx_rnap(dna!1,rna!3),dna_primer(prot!1,type~ori),dna_primer(prot,type~ss3end),rna_primer(prot!3,type~ori,dw) -> cplx_rnap(dna!1,rna!3),dna_primer(prot,type~ori),dna_primer(prot!1,type~ss3end),rna_primer(prot,type~ori,dw!4),rna_primer(prot!3,type~ss3end,up!4) @ 'fwd_sliding_rnap_dna_primer_ss3end'
+'sliding_rnap_dna_primer_t1' cplx_rnap(dna!1,rna!3),dna_primer(prot!1,type~ss3end),dna_primer(prot,type~t1),rna_primer(prot!3,type~ss3end) -> cplx_rnap(dna!1,rna!3),dna_primer(prot,type~ss3end),dna_primer(prot!1,type~t1),rna_primer(prot!3,type~ss3end) @ 'fwd_sliding_rnap_dna_primer_t1'
+'falloff_rnap_dna_primer_t1' cplx_rnap(dna!1,rna!3),dna_primer(prot!1,type~t1),rna_primer(prot!3,type~ss3end) -> cplx_rnap(dna,rna),dna_primer(prot,type~t1),rna_primer(prot,type~ss3end) @ 'fwd_falloff_rnap_dna_primer_t1'
+'falloff_rnap_dna_primer_l8' cplx_rnap(dna!1,rna!3),dna_primer(prot!1,type~l8),dna_primer(prot!_,rna!_,type~ori),rna_primer(prot!3,type~l8) -> cplx_rnap(dna,rna),dna_primer(prot,type~l8),dna_primer(prot!_,rna!_,type~ori),rna_primer(prot,type~l8) @ 'fwd_falloff_rnap_dna_primer_l8'
+'rna_rna_duplex' dna_primer(prot,rna!1,type~ori),rna_primer(dna!1,prot,rna,type~ori),rna_i(prot,rna,type~l3) -> dna_primer(prot,rna,type~ori),rna_primer(dna,prot,rna!2,type~ori),rna_i(prot,rna!2,type~l3) @ 'fwd_rna_rna_duplex'
+'docking_rnha_rna_primer_ori' prot_rnha(dna,rna),dna_primer(prot,rna!4,type~ori),rna_primer(dna!4,prot,type~ori) -> prot_rnha(dna!1,rna!3),dna_primer(prot!1,rna!4,type~ori),rna_primer(dna!4,prot!3,type~ori) @ 'fwd_docking_rnha_rna_primer_ori'
+'docking_rnha_rna_primer_ori_rev' prot_rnha(dna!1,rna!3),dna_primer(prot!1,rna!4,type~ori),rna_primer(dna!4,prot!3,type~ori) -> prot_rnha(dna,rna),dna_primer(prot,rna!4,type~ori),rna_primer(dna!4,prot,type~ori) @ 'rvs_docking_rnha_rna_primer_ori'
+'rna_primer_cleavage' prot_rnha(dna!1,rna!3),dna_primer(prot!1,rna!4,type~ori),rna_primer(dna!4,prot!3,type~ori,dw!5),rna_primer(prot,type~ss3end,up!5) -> prot_rnha(dna,rna!3),dna_primer(prot,rna!4,type~ori),rna_primer(dna!4,prot,type~ori,dw),rna_primer(prot!3,type~ss3end,up) @ 'fwd_rna_primer_cleavage'
+'deg_rna_primer_ss3end' prot_rnha(rna!3),rna_primer(prot!3,type~ss3end,up) -> prot_rnha(rna) @ 'fwd_deg_rna_primer_ss3end'
+'docking_pol3_dna_primer' cplx_pol3(dna,rna),dna_primer(prot,rna!4,type~ori),rna_primer(dna!4,prot,type~ori,dw) -> cplx_pol3(dna!1,rna!3),dna_primer(prot!1,rna!4,type~ori),rna_primer(dna!4,prot!3,type~ori,dw) @ 'fwd_docking_pol3_dna_primer_ori'
+'docking_pol3_dna_primer_rev' cplx_pol3(dna!1,rna!3),dna_primer(prot!1,rna!4,type~ori),rna_primer(dna!4,prot!3,type~ori,dw) -> cplx_pol3(dna,rna),dna_primer(prot,rna!4,type~ori),rna_primer(dna!4,prot,type~ori,dw) @ 'rvs_docking_pol3_dna_primer_ori'
+'dna_replication' cplx_pol3(dna!1,rna!3),dna_primer(prot!1,rna!2,type~ori),rna_primer(dna!2,prot!3,type~ori,dw) -> cplx_pol3(dna,rna),dna_primer(prot,rna,type~ori),dna_i(type~p1),dna_i(type~ss5end),dna_i(type~l1),dna_i(type~l2),dna_i(type~l3),dna_i(type~t1),dna_primer(type~p1),dna_primer(type~l1),dna_primer(type~l2),dna_primer(type~a),dna_primer(type~ab),dna_primer(type~bg),dna_primer(type~pl5),dna_primer(type~l5),dna_primer(type~l6),dna_primer(type~l7),dna_primer(type~l8),dna_primer(type~ori),dna_primer(type~ss3end),dna_primer(type~t1) @ 'fwd_dna_replication'
+
+%obs: 'obs_dna_i_p1' dna_i(dna?,prot?,rna?,type~p1,up?,dw?)
+%obs: 'obs_dna_i_ss5end' dna_i(dna?,prot?,rna?,type~ss5end,up?,dw?)
+%obs: 'obs_dna_i_l1' dna_i(dna?,prot?,rna?,type~l1,up?,dw?)
+%obs: 'obs_dna_i_l2' dna_i(dna?,prot?,rna?,type~l2,up?,dw?)
+%obs: 'obs_dna_i_l3' dna_i(dna?,prot?,rna?,type~l3,up?,dw?)
+%obs: 'obs_dna_i_t1' dna_i(dna?,prot?,rna?,type~t1,up?,dw?)
+%obs: 'obs_dna_primer_p1' dna_primer(dna?,prot?,rna?,type~p1,up?,dw?)
+%obs: 'obs_dna_primer_l1' dna_primer(dna?,prot?,rna?,type~l1,up?,dw?)
+%obs: 'obs_dna_primer_l2' dna_primer(dna?,prot?,rna?,type~l2,up?,dw?)
+%obs: 'obs_dna_primer_a' dna_primer(dna?,prot?,rna?,type~a,up?,dw?)
+%obs: 'obs_dna_primer_ab' dna_primer(dna?,prot?,rna?,type~ab,up?,dw?)
+%obs: 'obs_dna_primer_bg' dna_primer(dna?,prot?,rna?,type~bg,up?,dw?)
+%obs: 'obs_dna_primer_pl5' dna_primer(dna?,prot?,rna?,type~pl5,up?,dw?)
+%obs: 'obs_dna_primer_l5' dna_primer(dna?,prot?,rna?,type~l5,up?,dw?)
+%obs: 'obs_dna_primer_l6' dna_primer(dna?,prot?,rna?,type~l6,up?,dw?)
+%obs: 'obs_dna_primer_7' dna_primer(dna?,prot?,rna?,type~l7,up?,dw?)
+%obs: 'obs_dna_primer_l8' dna_primer(dna?,prot?,rna?,type~l8,up?,dw?)
+%obs: 'obs_dna_primer_ori' dna_primer(dna?,prot?,rna?,type~ori,up?,dw?)
+%obs: 'obs_dna_primer_ss3end' dna_primer(dna?,prot?,rna?,type~ss3end,up?,dw?)
+%obs: 'obs_dna_primer_t1' dna_primer(dna?,prot?,rna?,type~t1,up?,dw?)
+%obs: 'obs_rna_i_ss5end' rna_i(dna?,prot?,rna?,type~ss5end,up?,dw?)
+%obs: 'obs_rna_i_l1' rna_i(dna?,prot?,rna?,type~l1,up?,dw?)
+%obs: 'obs_rna_i_l2' rna_i(dna?,prot?,rna?,type~l2,up?,dw?)
+%obs: 'obs_rna_i_l3' rna_i(dna?,prot?,rna?,type~l3,up?,dw?)
+%obs: 'obs_rna_primer_l1' rna_primer(dna?,prot?,rna?,type~l1,up?,dw?)
+%obs: 'obs_rna_primer_l2' rna_primer(dna?,prot?,rna?,type~l2,up?,dw?)
+%obs: 'obs_rna_primer_a' rna_primer(dna?,prot?,rna?,type~a,up?,dw?)
+%obs: 'obs_rna_primer_ab' rna_primer(dna?,prot?,rna?,type~ab,up?,dw?)
+%obs: 'obs_rna_primer_bg' rna_primer(dna?,prot?,rna?,type~bg,up?,dw?)
+%obs: 'obs_rna_primer_pl5' rna_primer(dna?,prot?,rna?,type~pl5,up?,dw?)
+%obs: 'obs_rna_primer_l5' rna_primer(dna?,prot?,rna?,type~l5,up?,dw?)
+%obs: 'obs_rna_primer_l6' rna_primer(dna?,prot?,rna?,type~l6,up?,dw?)
+%obs: 'obs_rna_primer_l7' rna_primer(dna?,prot?,rna?,type~l7,up?,dw?)
+%obs: 'obs_rna_primer_l8' rna_primer(dna?,prot?,rna?,type~l8,up?,dw?)
+%obs: 'obs_rna_primer_ori' rna_primer(dna?,prot?,rna?,type~ori,up?,dw?)
+%obs: 'obs_rna_primer_ss3end' rna_primer(dna?,prot?,rna?,type~ss3end,up?,dw?)
+
+%init: 't0_dna_i_p1' dna_i(dna,prot,rna,type~p1,up,dw)
+%init: 't0_dna_i_ss5end' dna_i(dna,prot,rna,type~ss5end,up,dw)
+%init: 't0_dna_i_l1' dna_i(dna,prot,rna,type~l1,up,dw)
+%init: 't0_dna_i_l2' dna_i(dna,prot,rna,type~l2,up,dw)
+%init: 't0_dna_i_l3' dna_i(dna,prot,rna,type~l3,up,dw)
+%init: 't0_dna_i_t1' dna_i(dna,prot,rna,type~t1,up,dw)
+%init: 't0_dna_primer_p1' dna_primer(dna,prot,rna,type~p1,up,dw)
+%init: 't0_dna_primer_l1' dna_primer(dna,prot,rna,type~l1,up,dw)
+%init: 't0_dna_primer_l2' dna_primer(dna,prot,rna,type~l2,up,dw)
+%init: 't0_dna_primer_alpha' dna_primer(dna,prot,rna,type~a,up,dw)
+%init: 't0_dna_primer_alpha_beta' dna_primer(dna,prot,rna,type~ab,up,dw)
+%init: 't0_dna_primer_beta_gamma' dna_primer(dna,prot,rna,type~bg,up,dw)
+%init: 't0_dna_primer_prel5' dna_primer(dna,prot,rna,type~pl5,up,dw)
+%init: 't0_dna_primer_l5' dna_primer(dna,prot,rna,type~l5,up,dw)
+%init: 't0_dna_primer_l6' dna_primer(dna,prot,rna,type~l6,up,dw)
+%init: 't0_dna_primer_l7' dna_primer(dna,prot,rna,type~l7,up,dw)
+%init: 't0_dna_primer_l8' dna_primer(dna,prot,rna,type~l8,up,dw)
+%init: 't0_dna_primer_O' dna_primer(dna,prot,rna,type~ori,up,dw)
+%init: 't0_dna_primer_ss3end' dna_primer(dna,prot,rna,type~ss3end,up,dw)
+%init: 't0_dna_primer_t1' dna_primer(dna,prot,rna,type~t1,up,dw)
+%init: 't0_rna_i_ss5end' rna_i(dna,prot,rna,type~ss5end,up,dw)
+%init: 't0_rna_i_l1' rna_i(dna,prot,rna,type~l1,up,dw)
+%init: 't0_rna_i_l2' rna_i(dna,prot,rna,type~l2,up,dw)
+%init: 't0_rna_i_l3' rna_i(dna,prot,rna,type~l3,up,dw)
+%init: 't0_rna_primer_l1' rna_primer(dna,prot,rna,type~l1,up,dw)
+%init: 't0_rna_primer_l2' rna_primer(dna,prot,rna,type~l2,up,dw)
+%init: 't0_rna_primer_a' rna_primer(dna,prot,rna,type~a,up,dw)
+%init: 't0_rna_primer_ab' rna_primer(dna,prot,rna,type~ab,up,dw)
+%init: 't0_rna_primer_bg' rna_primer(dna,prot,rna,type~bg,up,dw)
+%init: 't0_rna_primer_pl5' rna_primer(dna,prot,rna,type~pl5,up,dw)
+%init: 't0_rna_primer_l5' rna_primer(dna,prot,rna,type~l5,up,dw)
+%init: 't0_rna_primer_l6' rna_primer(dna,prot,rna,type~l6,up,dw)
+%init: 't0_rna_primer_l7' rna_primer(dna,prot,rna,type~l7,up,dw)
+%init: 't0_rna_primer_l8' rna_primer(dna,prot,rna,type~l8,up,dw)
+%init: 't0_rna_primer_ori' rna_primer(dna,prot,rna,type~ori,up,dw)
+%init: 't0_rna_primer_ss3end' rna_primer(dna,prot,rna,type~ss3end,up,dw)
+%init: 't0_cplx_pol3' cplx_pol3(dna,rna)
+%init: 't0_cplx_rnap' cplx_rnap(dna,prot,rna)
+%init: 't0_prot_rnha' prot_rnha(dna,rna)
+
+
