@@ -13,3 +13,7 @@ To simulate using PISKaS v1.3, the model should be modified with the following s
 then
 
 `mpirun -np 1 path_to_piskas -i model.cka -t 1000 -p 1000 -o model.`
+
+For the combined model between the Core Gene Regulatory Network and the Plasmid Replication, please execute the following
+
+`mpirun -np 2 path_to_piskas -i combined_model.cka -t 1000 -p 1000 -o model.`
