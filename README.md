@@ -1,1 +1,1 @@
-# BBRC
+# Repository to BBRC paper examples
