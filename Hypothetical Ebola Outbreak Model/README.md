@@ -6,7 +6,7 @@ There are many files needed to run the simulations, they are:
 * CL-4cities.cka:   	    Parameters of the country such as population, ratios between cities, link and transport
 
 
-* To simulate the model, please execute the following
+* To run the model, execute
 
 `mpirun -np 4 path_to_piskas -i model-gamma.cka -i CL-4cities.cka -i observables.cka -p 100 -t 400 -sync-t 1`
 
